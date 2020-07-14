@@ -15,6 +15,8 @@
             "buildsystem": "meson",
             "post-install": [
                 "mv ${FLATPAK_DEST}/lxvst/Dexed.so ${FLATPAK_DEST}/lxvst/DISTRHO-Dexed.so",
+                "strip ${FLATPAK_DEST}/lxvst/*.so",
+                "strip ${FLATPAK_DEST}/lv2/*.lv2/*.so",
                 "install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo ../org.freedesktop.LinuxAudio.Plugins.DISTRHO-Ports.metainfo.xml",
                 "appstream-compose --basename=org.freedesktop.LinuxAudio.Plugins.DISTRHO-Ports --prefix=${FLATPAK_DEST} --origin=flatpak org.freedesktop.LinuxAudio.Plugins.DISTRHO-Ports",
                 "install -Dm644 -t $FLATPAK_DEST/share/licenses/distrho-ports ../doc/GPL.txt ../doc/LGPL.txt"
