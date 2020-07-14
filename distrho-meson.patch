@@ -1,0 +1,15 @@
+--- distrho-ports/meson.build	2020-07-07 19:52:17.000000000 -0400
++++ distrho-ports/meson.build-new	2020-07-13 23:50:06.251375116 -0400
+@@ -26,9 +26,9 @@
+ ###############################################################################
+ # set paths
+ 
+-lv2dir = prefix / libdir / 'lv2'
+-vst2dir = prefix / libdir / 'vst'
+-vst3dir = prefix / libdir / 'vst3'
++lv2dir = prefix / 'lv2'
++vst2dir = prefix / 'lxvst'
++vst3dir = prefix / 'vst3'
+ 
+ ###############################################################################
+ # set target OS
