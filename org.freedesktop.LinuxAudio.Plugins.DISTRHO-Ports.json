@@ -24,8 +24,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/DISTRHO/DISTRHO-Ports/archive/2020-07-14.tar.gz",
-                    "sha256": "e10bc98e3f41cf1903a764819a3473c0a5577062ab1df61d8a7f1a0f47d93f43"
+                    "url": "https://github.com/DISTRHO/DISTRHO-Ports/archive/2020-12-27.tar.gz",
+                    "sha256": "c7eefe80305963677af6fe87a8807a3892ca80fe2b0ae27114124defc98e16c6"
                 },
                 {
                     "type": "patch",

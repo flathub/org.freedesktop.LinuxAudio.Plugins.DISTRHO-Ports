@@ -3,11 +3,12 @@
   <id>org.freedesktop.LinuxAudio.Plugins.DISTRHO-Ports</id>
   <extends>org.freedesktop.LinuxAudio.BaseExtension</extends>
   <name>DISTRHO-Ports</name>
-  <summary>DISTRHO Plugin Ports LV2/VST</summary>
+  <summary>DISTRHO Plugin Ports LV2/VST/VST3</summary>
   <description>
-    <p>DISTRHO-Ports LV2 and VST plugins includes:</p>
+    <p>DISTRHO-Ports LV2, VST and VST3 plugins includes:</p>
     <ul>
       <li>Artican: The Function and The Pilgrim</li>
+      <li>CHOW: A maximally truculent distortion effect.</li>
       <li>Dexed: Synth that is closely modeled on the Yamaha DX7.</li>
       <li>dRowAudio: Distortion, Distortion Shaper, Flanger, Reverb, Tremolo.</li>
       <li>EasySSP: Easy Sound Space Perception audio visualization tool.</li>
@@ -32,6 +33,20 @@
   <metadata_license>CC0-1.0</metadata_license>
   <update_contact>hub_AT_figuiere.net</update_contact>
   <releases>
+    <release date="2020-12-27" version="2020.12.27">
+      <url>https://github.com/DISTRHO/DISTRHO-Ports/releases/tag/2020-12-27</url>
+      <description>
+        <ul>
+          <li>Add CHOW plugin (used to test updated JUCE)</li>
+          <li>Include new and legacy JUCE in source code (legacy JUCE
+          will only receive bug-fixes)</li>
+          <li>Rebase DISTRHO-Ports patches against JUCE6 codebase,
+          available in libs/juce-current/patches</li>
+          <li>Fix LV2 wrapper to build against latest JUCE</li>
+          <li>General cleanup to build system</li>
+        </ul>
+      </description>
+    </release>
     <release date="2020-07-14" version="2020.07.14">
       <url>https://github.com/DISTRHO/DISTRHO-Ports/releases/tag/2020-07-14</url>
       <description>
