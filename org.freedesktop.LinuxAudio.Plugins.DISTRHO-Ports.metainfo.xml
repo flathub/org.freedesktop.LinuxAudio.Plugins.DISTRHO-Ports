@@ -33,6 +33,20 @@
   <metadata_license>CC0-1.0</metadata_license>
   <update_contact>hub_AT_figuiere.net</update_contact>
   <releases>
+    <release date="2021-01-15" version="2021.01.15">
+      <url>https://github.com/DISTRHO/DISTRHO-Ports/releases/tag/2021-01-15</url>
+      <description>
+        <ul>
+          <li>Fix out of bounds buffer write in drowaudio-reverb
+          (leading to memory corruption and/or crashes)</li>
+          <li>Fix lv2 export preset meta-data validation</li>
+          <li>Fix lv2 ttl generation when cross-compiling (e.g. using
+          mingw and wine within linux)</li>
+          <li>Fix exported symbols</li>
+          <li>Fix build/compatibility with macOS 11 / arm64</li>
+        </ul>
+      </description>
+    </release>
     <release date="2020-12-27" version="2020.12.27">
       <url>https://github.com/DISTRHO/DISTRHO-Ports/releases/tag/2020-12-27</url>
       <description>
