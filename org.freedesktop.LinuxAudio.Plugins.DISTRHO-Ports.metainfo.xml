@@ -8,7 +8,6 @@
     <p>DISTRHO-Ports LV2, VST and VST3 plugins includes:</p>
     <ul>
       <li>Artican: The Function and The Pilgrim</li>
-      <li>CHOW: A maximally truculent distortion effect.</li>
       <li>Dexed: Synth that is closely modeled on the Yamaha DX7.</li>
       <li>dRowAudio: Distortion, Distortion Shaper, Flanger, Reverb, Tremolo.</li>
       <li>EasySSP: Easy Sound Space Perception audio visualization tool.</li>
@@ -22,9 +21,13 @@
       <li>PitchedDelay: Delay that allow pitching the delayed signal.</li>
       <li>ReFine: Add a final polishing to your tracks, busses and masters.</li>
       <li>Stereo Source Separator: Uses the spatial information hidden in the stereo signal for source separation.</li>
+      <li>(NEW) SwankyAmp: A tube amplifier simulation DSP plugin
+      which aims to capture the details in the dynamics of tube
+      amplifiers.</li>
       <li>TAL Plugins: Dub-3, Filter, Filter-2, NoiseMaker, Reverb, Reverb-2, Reverb-3 and Vocoder-2.</li>
       <li>Temper: modern digital distortion.</li>
       <li>Vex: A 3 oscillator subtractive waverom synth.</li>
+      <li>(NEW) Vitalium: A Spectral warping wavetable synth.</li>
       <li>Wolpertinger: Subtractive, antialiased polyphonic software synthesizer.</li>
     </ul>
   </description>
@@ -33,6 +36,19 @@
   <metadata_license>CC0-1.0</metadata_license>
   <update_contact>hub_AT_figuiere.net</update_contact>
   <releases>
+    <release date="2021-03-15" version="2021.03.15">
+      <url>https://github.com/DISTRHO/DISTRHO-Ports/releases/tag/2021-03-15</url>
+      <description>
+        <ul>
+          <li>Add SwankyAmp</li>
+          <li>Add Vitalium</li>
+          <li>Fix up LV2 wrapper with juce-current</li>
+          <li>Sync juce-current with latest juce</li>
+          <li>Tweak build system to drop a few run-time dependencies for juce-current</li>
+          <li>Removed CHOW</li>
+        </ul>
+      </description>
+    </release>
     <release date="2021-01-15" version="2021.01.15">
       <url>https://github.com/DISTRHO/DISTRHO-Ports/releases/tag/2021-01-15</url>
       <description>

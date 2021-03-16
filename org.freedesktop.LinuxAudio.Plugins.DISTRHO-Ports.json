@@ -7,14 +7,17 @@
     "build-extension": true,
     "appstream-compose": false,
     "build-options": {
+        "prepend-pkg-config-path": "/app/extensions/Plugins/DISTRHO-Ports/lib/pkgconfig",
         "prefix": "/app/extensions/Plugins/DISTRHO-Ports"
     },
     "modules": [
+        "shared-modules/linux-audio/fftw3f-static.json",
         {
             "name": "distrho-ports",
             "buildsystem": "meson",
             "post-install": [
                 "mv ${FLATPAK_DEST}/lxvst/Dexed.so ${FLATPAK_DEST}/lxvst/DISTRHO-Dexed.so",
+                "strip ${FLATPAK_DEST}/vst3/*.vst3/Contents/*/*.so",
                 "strip ${FLATPAK_DEST}/lxvst/*.so",
                 "strip ${FLATPAK_DEST}/lv2/*.lv2/*.so",
                 "install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo ../org.freedesktop.LinuxAudio.Plugins.DISTRHO-Ports.metainfo.xml",
@@ -24,8 +27,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/DISTRHO/DISTRHO-Ports/archive/2021-01-15.tar.gz",
-                    "sha256": "19b4c3f33e73d7dd6c8b16666f6506b3abc1884b06e604769a217bce2bb61ed9"
+                    "url": "https://github.com/DISTRHO/DISTRHO-Ports/archive/2021-03-15.tar.gz",
+                    "sha256": "72754070106501ef0f7321eb9e37534ee7052e925821f5af8af39357f7078132"
                 },
                 {
                     "type": "patch",
