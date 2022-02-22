@@ -8,7 +8,7 @@
 -vst2dir = prefix / libdir / 'vst'
 -vst3dir = prefix / libdir / 'vst3'
 +lv2dir = prefix / 'lv2'
-+vst2dir = prefix / 'lxvst'
++vst2dir = prefix / 'vst'
 +vst3dir = prefix / 'vst3'
  
  ###############################################################################
