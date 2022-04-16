@@ -15,6 +15,9 @@
         {
             "name": "distrho-ports",
             "buildsystem": "meson",
+            "config-opts": [
+                "-Dbuildtype=release"
+            ],
             "post-install": [
                 "ln -sf vst $FLATPAK_DEST/lxvst",
                 "mv ${FLATPAK_DEST}/vst/Dexed.so ${FLATPAK_DEST}/vst/DISTRHO-Dexed.so",
