@@ -1,9 +1,9 @@
 {
     "id": "org.freedesktop.LinuxAudio.Plugins.DISTRHO-Ports",
-    "branch": "21.08",
+    "branch": "22.08",
     "runtime": "org.freedesktop.LinuxAudio.BaseExtension",
-    "runtime-version": "21.08",
-    "sdk": "org.freedesktop.Sdk//21.08",
+    "runtime-version": "stable",
+    "sdk": "org.freedesktop.Sdk//22.08",
     "build-extension": true,
     "appstream-compose": false,
     "build-options": {
@@ -19,7 +19,6 @@
                 "-Dbuildtype=release"
             ],
             "post-install": [
-                "ln -sf vst $FLATPAK_DEST/lxvst",
                 "mv ${FLATPAK_DEST}/vst/Dexed.so ${FLATPAK_DEST}/vst/DISTRHO-Dexed.so",
                 "strip ${FLATPAK_DEST}/vst3/*.vst3/Contents/*/*.so",
                 "strip ${FLATPAK_DEST}/vst/*.so",
