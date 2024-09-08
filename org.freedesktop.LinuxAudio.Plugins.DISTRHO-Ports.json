@@ -1,11 +1,10 @@
 {
     "id": "org.freedesktop.LinuxAudio.Plugins.DISTRHO-Ports",
-    "branch": "23.08",
+    "branch": "24.08",
     "runtime": "org.freedesktop.LinuxAudio.BaseExtension",
     "runtime-version": "stable",
-    "sdk": "org.freedesktop.Sdk//23.08",
+    "sdk": "org.freedesktop.Sdk//24.08",
     "build-extension": true,
-    "appstream-compose": false,
     "build-options": {
         "prepend-pkg-config-path": "/app/extensions/Plugins/DISTRHO-Ports/lib/pkgconfig",
         "prefix": "/app/extensions/Plugins/DISTRHO-Ports"
@@ -15,6 +14,9 @@
         {
             "name": "distrho-ports",
             "buildsystem": "meson",
+            "build-options": {
+                "cxxflags": "-fpermissive"
+            },
             "config-opts": [
                 "-Dbuildtype=release"
             ],
@@ -24,7 +26,6 @@
                 "strip ${FLATPAK_DEST}/vst/*.so",
                 "strip ${FLATPAK_DEST}/lv2/*.lv2/*.so",
                 "install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo ../org.freedesktop.LinuxAudio.Plugins.DISTRHO-Ports.metainfo.xml",
-                "appstream-compose --basename=org.freedesktop.LinuxAudio.Plugins.DISTRHO-Ports --prefix=${FLATPAK_DEST} --origin=flatpak org.freedesktop.LinuxAudio.Plugins.DISTRHO-Ports",
                 "install -Dm644 -t $FLATPAK_DEST/share/licenses/distrho-ports ../doc/GPL.txt ../doc/LGPL.txt"
             ],
             "sources": [
